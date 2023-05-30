@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="shortcut icon" href="img/logoweb.ico">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+                <img src="img/logo.png" alt="" class="logo">
+    </header>
+    <main>
+        <section class="text-container">
+                <div class="text">
+                    <textarea  id="text" cols="20" rows="10" placeholder="Ingresea el texto aqui" class="textarea-encriptar"></textarea>
+                    <div class="content">
+                        <div class="warning">
+                            <img src="img/vector.png" alt="signo de admiración" srcset="">
+                            <p> Solo letras minúsculas y sin acentos</p>
+                        </div>
+                        <div class="button-text">
+                            <button class="button-encriptar" onclick="encritparTexto()" >Encriptar</button>
+                            <button class="button-desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-text">
+                    <div class="content-img-muneco" id="content-disappear">
+                        <img src="img/muneco.png" alt="imagen de una persona con una lupa" class="img-muneco"> 
+                        <h2 >Ningún mensaje fue encontrado</h2>
+                        <p> Ingresea el texto que desees encriptar o desencriptar</p>
+                    </div>
+                    <div class="result-content" id="content-button-disappear">
+                        <textarea  id="result" cols="20" rows="10"  class="textarea-desencriptar"></textarea>
+                        <div class="button-result-text">
+                            <button class="button-copy" id="copy" onclick="copiarTexto()">Copiar</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/jorgeluis1996"><img src="img/github-icon.png" alt="el simobolo de de un gato" srcset=""></a>
+        <p class="copyright"> & Copyright Jorge Muñiz - 2023</p>
+    </footer>
+    <script src="js/main.js">
+
+    </script>
+</body>
+</html>
